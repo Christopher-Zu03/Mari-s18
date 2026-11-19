@@ -44,7 +44,7 @@ export const manualPagina = {
 
 // CHAPTER 2: EL CADÁVER DE LA NOVIA - The Threshold Message
 export const umbralMessage = {
-  from: "Tu familia",
+  from: "Tu familia.",
   message: `Mari,
 
 Hoy es un día especial. No es solamente un cumpleaños más, es el comienzo de una nueva etapa, una puerta que se abre hacia un mundo lleno de posibilidades, sueños y experiencias que todavía esperan por ti.
