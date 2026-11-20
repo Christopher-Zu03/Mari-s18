@@ -393,7 +393,7 @@ button, img, svg { user-select: none; -webkit-user-select: none; -webkit-user-dr
 .card-corner-bottom { right: 10cqi; bottom: 10cqi; transform: rotate(180deg); }
 .poker-center-suit { z-index: 2; margin-top: 10cqi; color: var(--suit-color); font: 400 28cqi/1 Georgia, serif; text-shadow: 0 1px 0 rgba(255,255,255,.55); }
 .poker-name { z-index: 2; max-width: 80%; margin-top: 5cqi; color: var(--al-wine); font: 400 clamp(10px, 11.5cqi, 56px)/1.05 'AliceWonderland', var(--serif); text-align: center; overflow-wrap: anywhere; }
-.card-invite { z-index: 2; margin-top: 6cqi; color: #79624f; font: clamp(6px, 5.4cqi, 22px)/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; opacity: .7; }
+.card-invite { z-index: 2; max-width: 82%; margin-top: 6cqi; color: #79624f; font: clamp(6px, 5.4cqi, 22px)/1.15 var(--mono); letter-spacing: .08em; text-align: center; text-transform: uppercase; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; opacity: .7; }
 .wish-card.is-read .wish-front { background-color: #ecdcb6; }
 .wish-card.is-read .card-invite { color: var(--al-crimson); opacity: 1; }
 .wish-card.is-front { transform: translateY(-10px) rotate(var(--card-rotation)) scale(1.04); }
@@ -432,6 +432,9 @@ button, img, svg { user-select: none; -webkit-user-select: none; -webkit-user-dr
   .wishes-header p:last-child { font-size: 11px; line-height: 1.15; }
   .wish-table { gap: 12px 0; margin-top: 4px; padding: 14px 4px; }
   .wish-deck { gap: 12px 0; }
+  .wish-front { padding-inline: 2px; }
+  .card-invite { max-width: 76%; margin-top: 5cqi; font-size: clamp(5px, 4.8cqi, 7px); line-height: 1.1; letter-spacing: .04em; }
+  .poker-name { max-width: 78%; }
   .card-fall svg { width: 46px; height: 66px; }
   .wish-letter img { width: 128px; height: 128px; }
   .wish-letter h3 { font-size: 32px; }

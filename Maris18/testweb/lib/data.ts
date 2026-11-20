@@ -318,7 +318,7 @@ export const cartasInvitados: CartaInvitado[] = [
     mensaje: `Felices 18 años! ❤️ Que esta nueva etapa de tu vida venga llena de sueños, alegrías y muchísimas bendiciones! 
     Nunca dejes de ser esa personita tan linda, amorosa y dedicada. Que sigas esforzándote por alcanzar todo lo que te 
     propongas y que nunca te falten los motivos para sonreír! Te quiero mucho mi amor y te deseo que siempre seas muy feliz! 💕`,
-    fotoInvitado: "/18anos/resources-18anos/familyImg/macha-20261119.jpeg",
+    fotoInvitado: "/18anos/resources-18anos/familyImg/macha.jpeg",
   },
   {
     id: 10,
