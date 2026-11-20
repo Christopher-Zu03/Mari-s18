@@ -404,6 +404,14 @@ button, img, svg { user-select: none; -webkit-user-select: none; -webkit-user-dr
 /* The chosen card flies to the center, grows and turns over: its back holds the message. */
 .wish-zoom-backdrop { position: fixed; z-index: 40; inset: 0; display: grid; place-items: center; padding: 20px; background: radial-gradient(ellipse at center, rgba(11,29,51,.55), rgba(4,8,16,.88)); }
 .wish-zoom { position: relative; aspect-ratio: .63; transform-style: preserve-3d; will-change: transform; }
+.wish-zoom.is-ios { transform-style: flat; -webkit-transform-style: flat; }
+.wish-zoom.is-ios > .wish-front { display: none; }
+.wish-zoom.is-ios .wish-zoom-back {
+  transform: none;
+  -webkit-transform: none;
+  backface-visibility: visible;
+  -webkit-backface-visibility: visible;
+}
 .wish-zoom .wish-front { box-shadow: 0 30px 60px rgba(0,0,0,.6), inset 0 0 0 3px var(--al-gold), inset 0 0 0 7px #f8eed6; }
 .wish-zoom-back { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; padding: clamp(26px, 6%, 40px) clamp(20px, 6%, 36px) clamp(20px, 5%, 30px); transform: rotateY(180deg); backface-visibility: hidden; -webkit-backface-visibility: hidden; border: 4px solid #e8d8b3; border-radius: 10px; outline: 1px solid #765238; background: repeating-linear-gradient(45deg, transparent 0 10px, rgba(43,10,18,.03) 10px 11px), radial-gradient(ellipse at 50% 0, #f8eed6, #efdcb2 70%); color: var(--al-wine); box-shadow: 0 30px 60px rgba(0,0,0,.6), inset 0 0 0 3px var(--al-gold), inset 0 0 0 7px #f8eed6; }
 .wish-zoom-back::before { position: absolute; inset: 14px; content: ''; border: 1px solid rgba(43,10,18,.45); border-radius: 4px; pointer-events: none; }

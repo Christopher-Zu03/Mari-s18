@@ -282,6 +282,11 @@ export function WishesChapter() {
   const [frontCard, setFrontCard] = useState<number | null>(null)
   const [readCards, setReadCards] = useState<number[]>([])
   const [cardLayout] = useState(() => getCardLayout(cartasInvitados.length))
+  const [isIOS] = useState(() =>
+    typeof navigator !== 'undefined' &&
+    (/iPad|iPhone|iPod/.test(navigator.userAgent) ||
+      (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1))
+  )
   const cardRefs = useRef<(HTMLButtonElement | null)[]>([])
   const tableRef = useRef<HTMLDivElement>(null)
   const [deck, setDeck] = useState<{ card: number; columns: number } | null>(null)
@@ -347,7 +352,16 @@ export function WishesChapter() {
   }
 
   const flight = { duration: reduce ? 0 : .85, ease: [0.65, 0, 0.25, 1] as const }
-  const atTable = origin && { x: origin.x, y: origin.y, scale: origin.scale, rotate: origin.rotate, rotateY: 0 }
+  const atTable = origin && {
+    x: origin.x,
+    y: origin.y,
+    scale: origin.scale,
+    rotate: origin.rotate,
+    ...(isIOS ? {} : { rotateY: 0 }),
+  }
+  const openCardTransform = isIOS
+    ? { x: 0, y: 0, scale: 1, rotate: 0 }
+    : { x: 0, y: 0, scale: 1, rotate: 0, rotateY: 180 }
 
   return <section className="chapter wishes" aria-label="Mesa de los deseos">
     <Image {...art.aliciaFondo} className="scene-bg" alt="" />
@@ -369,7 +383,7 @@ export function WishesChapter() {
     <div className="wish-clock" aria-hidden="true" />
 
     <AnimatePresence onExitComplete={() => setAwayCard(null)}>{guest && selected !== null && origin && atTable && <motion.div className="wish-zoom-backdrop" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0, transition: { duration: .5, delay: .3 } }} transition={{ duration: .45 }} onClick={close}>
-      <motion.div className={`wish-zoom ${suitClass(suitOf(selected))}`} role="dialog" aria-modal="true" aria-label={`Mensaje de ${guest.nombre}`} style={{ width: origin.width, transformPerspective: 1600 }} initial={atTable} animate={{ x: 0, y: 0, scale: 1, rotate: 0, rotateY: 180 }} exit={atTable} transition={flight} onClick={(event) => event.stopPropagation()}>
+      <motion.div className={`wish-zoom ${isIOS ? 'is-ios' : ''} ${suitClass(suitOf(selected))}`} role="dialog" aria-modal="true" aria-label={`Mensaje de ${guest.nombre}`} style={{ width: origin.width, ...(isIOS ? {} : { transformPerspective: 1600 }) }} initial={atTable} animate={openCardTransform} exit={atTable} transition={flight} onClick={(event) => event.stopPropagation()}>
         <div className="wish-face wish-front" aria-hidden="true"><CardFace suit={suitOf(selected)} name={guest.nombre} isRead={false} /></div>
         <div className="wish-zoom-back">
           <button className="modal-close" onClick={close} aria-label="Cerrar mensaje">×</button>
