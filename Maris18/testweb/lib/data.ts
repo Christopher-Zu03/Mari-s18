@@ -433,6 +433,16 @@ y que te vuelvas muy viejita,
     nombre: "Enzo",
     mensaje: `Mariii feliz cumpleaños, deseo que para vos este gran comienzo sea de muchos éxitos y bendiciones. Nunca dejes de ser la persona que eres tan alegre y bien esforzada, me acuerdo de la gran dupla que éramos y quiero que sepas que nada ha cambiado, te quiero un montón y siempre me tendrás para lo que necesites, me ha costado no tener a mi compañera de exposiciones jaja, pero espero que de verdad sigas adelante y nunca te rindas, te quiero mucho Mari y te deseo un muy feliz cumpleaños ❤️`,
     fotoInvitado: "/18anos/resources-18anos/familyImg/enzo.png",
+  },
+  {
+    id: 18,
+    nombre: "Naye",
+    mensaje: `Hola Mari linda, soy yo, Nayelita.
+    Espero estés muy bien, hace mucho no se de ti, pero mi cariño sigue acá, siempre fuiste la mejor conmigo, siempre atenta y linda. Desde que te conocí le di muchas gracias a Dios por la personita tan maravillosa que tuve la oportunidad de conocer, aunque me duele un poco que ya no seamos como antes, acá estaré siempre. Espero te esté llendo de lo mejor, y sé que si porque eres una personita súper buena e inteligente, sé que vas a lograr todas tus metas, sabes que te deseo lo mejor hoy y siempre, acá estaré siempre que necesites.
+    Sigue siendo esa personita tan amable y tan única, que Dios te bendiga hoy y siempre mi amorcita. 
+    FELICES #18 PRINCESS 
+    TE QUIERO MUCHÍSIMO 💗`,
+    fotoInvitado: "/18anos/resources-18anos/familyImg/naye.png",
   }
   
 ];
