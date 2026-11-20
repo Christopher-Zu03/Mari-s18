@@ -79,7 +79,16 @@ function useTimeline() {
 // Messages are written as template literals with manual line wraps: blank
 // lines separate paragraphs, single line breaks are just wrapping.
 function Paragraphs({ text }: { text: string }) {
-  return <>{text.trim().split(/\n\s*\n/).map((paragraph, index) => <p key={index}>{paragraph.split('\n').map((line) => line.trim()).join(' ')}</p>)}</>
+  return <>{text.trim().split(/\n\s*\n/).map((paragraph, paragraphIndex) =>
+    <p key={paragraphIndex}>
+      {paragraph.split('\n').map((line, lineIndex, lines) =>
+        <span key={lineIndex}>
+          {line.trim()}
+          {lineIndex < lines.length - 1 && <br />}
+        </span>
+      )}
+    </p>
+  )}</>
 }
 
 // The Nightmare Before Christmas font has no "ñ": draw it as an "n" with a tilde on top.
@@ -147,12 +156,21 @@ export function ThresholdChapter() {
 export function AlbumChapter() {
   const reduce = useStill()
   const [selectedPhoto, setSelectedPhoto] = useState<number | null>(null)
+  const [photoDirection, setPhotoDirection] = useState(1)
   const selected = selectedPhoto === null ? null : fotosRecuerdos[selectedPhoto]
 
   useEffect(() => {
     if (selectedPhoto === null) return
     const onKey = (event: KeyboardEvent) => {
       if (event.key === 'Escape') setSelectedPhoto(null)
+      if (event.key === 'ArrowLeft') {
+        setPhotoDirection(-1)
+        setSelectedPhoto((current) => current === null ? null : (current - 1 + fotosRecuerdos.length) % fotosRecuerdos.length)
+      }
+      if (event.key === 'ArrowRight') {
+        setPhotoDirection(1)
+        setSelectedPhoto((current) => current === null ? null : (current + 1) % fotosRecuerdos.length)
+      }
     }
     window.addEventListener('keydown', onKey)
     return () => window.removeEventListener('keydown', onKey)
@@ -199,9 +217,40 @@ export function AlbumChapter() {
           onClick={(event) => event.stopPropagation()}
         >
           <button type="button" className="memory-zoom-close" onClick={() => setSelectedPhoto(null)} aria-label="Cerrar imagen ampliada">×</button>
-          <div className="memory-zoom-image">
-            <img src={selected.url} alt={selected.caption || `Recuerdo ${selected.id}`} />
-          </div>
+          <button
+            type="button"
+            className="memory-zoom-nav memory-zoom-prev"
+            onClick={() => {
+              setPhotoDirection(-1)
+              setSelectedPhoto((selectedPhoto - 1 + fotosRecuerdos.length) % fotosRecuerdos.length)
+            }}
+            aria-label="Ver imagen anterior"
+          >
+            ‹
+          </button>
+          <AnimatePresence mode="wait" initial={false}>
+            <motion.div
+              key={selected.id}
+              className="memory-zoom-image"
+              initial={reduce ? false : { opacity: 0, x: photoDirection * 70, scale: .96 }}
+              animate={{ opacity: 1, x: 0, scale: 1 }}
+              exit={reduce ? undefined : { opacity: 0, x: photoDirection * -70, scale: .96 }}
+              transition={{ duration: reduce ? 0 : .38, ease: [0.22, 1, .36, 1] }}
+            >
+              <img src={selected.url} alt={selected.caption || `Recuerdo ${selected.id}`} />
+            </motion.div>
+          </AnimatePresence>
+          <button
+            type="button"
+            className="memory-zoom-nav memory-zoom-next"
+            onClick={() => {
+              setPhotoDirection(1)
+              setSelectedPhoto((selectedPhoto + 1) % fotosRecuerdos.length)
+            }}
+            aria-label="Ver siguiente imagen"
+          >
+            ›
+          </button>
           {selected.caption && <p className="memory-zoom-caption">{selected.caption}</p>}
         </motion.div>
       </motion.div>}

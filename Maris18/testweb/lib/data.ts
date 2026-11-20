@@ -69,62 +69,188 @@ Con todo nuestro amor
 export type FotoRecuerdo = { id: number; url: string; caption?: string; size?: "small" | "medium" | "large" | "wide" };
 
 export const fotosRecuerdos: FotoRecuerdo[] = [
-  {
-    id: 1,
-    url: "/18anos/resources-18anos/familyImg/dinny.jpeg",
-    caption: "El mejor papá del mundo",
-    size: "large",
-  },
-  {
-    id: 2,
-    url: "/18anos/resources-18anos/familyImg/wen.jpeg",
-    caption: "La mejor Madrina del mundo",
-    size: "large",
-  },
-  {
-    id: 3,
-    url: "/18anos/resources-18anos/familyImg/cindy.jpeg",
-    caption: "La mejor tía del mundo",
-    size: "large",
-  },
-  {
-    id: 4,
-    url: "/18anos/resources-18anos/familyImg/noa.png",
-    caption: "Tu primo más loquillo",
-    size: "medium",
-  },
-  {
-    id: 5,
-    url: "/18anos/resources-18anos/familyImg/gaby.jpeg",
-    caption: "La mejor tía del mundo",
-    size: "large",
-  },
-  {
-    id: 6,
-    url: "/18anos/resources-18anos/familyImg/samiKiki.jpeg",
-    caption: "Tus primos más pegas",
-    size: "large",
-  },
-  {
-    id: 7,
-    url: "/18anos/resources-18anos/familyImg/chris.jpeg",
-    caption: "Tu amorsh",
-    size: "medium",
-  },
-  { id: 8, url: "/18anos/resources-18anos/familyImg/imagen 1.jpeg", size: "large" },
-  { id: 9, url: "/18anos/resources-18anos/familyImg/imagen 2.jpeg", size: "large" },
-  { id: 10, url: "/18anos/resources-18anos/familyImg/imagen 3.jpeg", size: "large" },
-  { id: 11, url: "/18anos/resources-18anos/familyImg/imagen 4.jpeg", size: "large" },
-  { id: 12, url: "/18anos/resources-18anos/familyImg/imagen 5.jpeg", size: "large" },
-  { id: 13, url: "/18anos/resources-18anos/familyImg/imagen 6.jpeg", size: "large" },
-  { id: 14, url: "/18anos/resources-18anos/familyImg/imagen 7.jpeg", size: "large" },
-  { id: 15, url: "/18anos/resources-18anos/familyImg/imagen 8.jpeg", size: "large" },
-  { id: 16, url: "/18anos/resources-18anos/familyImg/imagen 9.jpeg", size: "large" },
-  { id: 17, url: "/18anos/resources-18anos/familyImg/imagen 10.jpeg", size: "medium" },
-  { id: 18, url: "/18anos/resources-18anos/familyImg/imagen 11.jpeg", size: "large" },
-  { id: 19, url: "/18anos/resources-18anos/familyImg/imagen 12.jpeg", size: "large" },
-  { id: 20, url: "/18anos/resources-18anos/familyImg/imagen 13.jpeg", size: "large" }
+{
+id: 1,
+url: "/18anos/resources-18anos/familyImg/dinny.jpeg",
+size: "large",
+},
+{
+id: 2,
+url: "/18anos/resources-18anos/familyImg/pao.jpeg",
+size: "large",
+},
+{
+id: 3,
+url: "/18anos/resources-18anos/familyImg/bran.jpeg",
+size: "large",
+},
+{
+id: 4,
+url: "/18anos/resources-18anos/familyImg/eva.jpeg",
+size: "large",
+},
+{
+id: 5,
+url: "/18anos/resources-18anos/familyImg/marcos.jpeg",
+size: "large",
+},
+{
+id: 6,
+url: "/18anos/resources-18anos/familyImg/jimena.jpeg",
+size: "large",
+},
+{
+id: 7,
+url: "/18anos/resources-18anos/familyImg/wen.jpeg",
+size: "large",
+},
+{
+id: 8,
+url: "/18anos/resources-18anos/familyImg/cindy.jpeg",
+size: "large",
+},
+{
+id: 9,
+url: "/18anos/resources-18anos/familyImg/noa.png",
+size: "medium",
+},
+{
+id: 10,
+url: "/18anos/resources-18anos/familyImg/dey.jpeg",
+size: "medium",
+},
+{
+id: 11,
+url: "/18anos/resources-18anos/familyImg/gaby.jpeg",
+size: "large",
+},
+{
+id: 12,
+url: "/18anos/resources-18anos/familyImg/samiKiki.jpeg",
+size: "large",
+},
+{
+id: 13,
+url: "/18anos/resources-18anos/familyImg/chris.jpeg",
+size: "medium",
+},
+{
+id: 14,
+url: "/18anos/resources-18anos/familyImg/macha.jpeg",
+size: "medium",
+},
+{ id: 15, url: "/18anos/resources-18anos/familyImg/imagen 101.png", size: "large" },
+{
+id: 16,
+url: "/18anos/resources-18anos/familyImg/paula.png",
+size: "medium",
+},
+{
+id: 17,
+url: "/18anos/resources-18anos/familyImg/joshua.jpeg",
+size: "large",
+},
+{ id: 18, url: "/18anos/resources-18anos/familyImg/imagen 94.jpeg", size: "large" },
+{ id: 19, url: "/18anos/resources-18anos/familyImg/imagen 95.png", size: "large" },
+{ id: 20, url: "/18anos/resources-18anos/familyImg/imagen 1.jpeg", size: "large" },
+{ id: 21, url: "/18anos/resources-18anos/familyImg/imagen 2.jpeg", size: "large" },
+{ id: 22, url: "/18anos/resources-18anos/familyImg/imagen 3.jpeg", size: "large" },
+{ id: 23, url: "/18anos/resources-18anos/familyImg/imagen 98.png", size: "large" },
+{ id: 24, url: "/18anos/resources-18anos/familyImg/imagen 4.jpeg", size: "large" },
+{ id: 25, url: "/18anos/resources-18anos/familyImg/imagen 5.jpeg", size: "large" },
+{ id: 26, url: "/18anos/resources-18anos/familyImg/imagen 6.jpeg", size: "large" },
+{ id: 27, url: "/18anos/resources-18anos/familyImg/imagen 7.jpeg", size: "large" },
+{ id: 28, url: "/18anos/resources-18anos/familyImg/imagen 96.png", size: "medium" },
+{ id: 29, url: "/18anos/resources-18anos/familyImg/imagen 8.jpeg", size: "large" },
+{ id: 30, url: "/18anos/resources-18anos/familyImg/imagen 9.jpeg", size: "large" },
+{ id: 31, url: "/18anos/resources-18anos/familyImg/imagen 10.jpeg", size: "medium" },
+{ id: 32, url: "/18anos/resources-18anos/familyImg/imagen 11.jpeg", size: "large" },
+{ id: 33, url: "/18anos/resources-18anos/familyImg/imagen 100.png", size: "large" },
+{ id: 34, url: "/18anos/resources-18anos/familyImg/imagen 12.jpeg", size: "large" },
+{ id: 35, url: "/18anos/resources-18anos/familyImg/imagen 13.jpeg", size: "large" },
+{ id: 36, url: "/18anos/resources-18anos/familyImg/imagen 14.jpeg", size: "large" },
+{ id: 37, url: "/18anos/resources-18anos/familyImg/imagen 97.png", size: "large" },
+{ id: 38, url: "/18anos/resources-18anos/familyImg/imagen 15.jpeg", size: "large" },
+{ id: 39, url: "/18anos/resources-18anos/familyImg/imagen 16.jpeg", size: "large" },
+{ id: 40, url: "/18anos/resources-18anos/familyImg/imagen 17.jpeg", size: "large" },
+{ id: 41, url: "/18anos/resources-18anos/familyImg/imagen 18.jpeg", size: "large" },
+{ id: 42, url: "/18anos/resources-18anos/familyImg/imagen 99.png", size: "large" },
+{ id: 43, url: "/18anos/resources-18anos/familyImg/imagen 19.jpeg", size: "large" },
+{ id: 44, url: "/18anos/resources-18anos/familyImg/imagen 20.jpeg", size: "medium" },
+{ id: 45, url: "/18anos/resources-18anos/familyImg/imagen 21.jpeg", size: "large" },
+{ id: 46, url: "/18anos/resources-18anos/familyImg/imagen 22.jpeg", size: "medium" },
+{ id: 47, url: "/18anos/resources-18anos/familyImg/imagen 23.jpeg", size: "large" },
+{ id: 48, url: "/18anos/resources-18anos/familyImg/imagen 24.jpeg", size: "large" },
+{ id: 49, url: "/18anos/resources-18anos/familyImg/imagen 25.jpeg", size: "large" },
+{ id: 50, url: "/18anos/resources-18anos/familyImg/imagen 27.jpeg", size: "large" },
+{ id: 51, url: "/18anos/resources-18anos/familyImg/imagen 28.jpeg", size: "large" },
+{ id: 52, url: "/18anos/resources-18anos/familyImg/imagen 29.jpeg", size: "large" },
+{ id: 53, url: "/18anos/resources-18anos/familyImg/imagen 30.jpeg", size: "large" },
+{ id: 54, url: "/18anos/resources-18anos/familyImg/imagen 31.jpeg", size: "large" },
+{ id: 55, url: "/18anos/resources-18anos/familyImg/imagen 32.jpeg", size: "large" },
+{ id: 56, url: "/18anos/resources-18anos/familyImg/imagen 33.jpeg", size: "large" },
+{ id: 57, url: "/18anos/resources-18anos/familyImg/imagen 34.jpeg", size: "large" },
+{ id: 58, url: "/18anos/resources-18anos/familyImg/imagen 35.jpeg", size: "large" },
+{ id: 59, url: "/18anos/resources-18anos/familyImg/imagen 36.jpeg", size: "large" },
+{ id: 60, url: "/18anos/resources-18anos/familyImg/imagen 37.jpeg", size: "large" },
+{ id: 61, url: "/18anos/resources-18anos/familyImg/imagen 38.jpeg", size: "large" },
+{ id: 62, url: "/18anos/resources-18anos/familyImg/imagen 39.jpeg", size: "large" },
+{ id: 63, url: "/18anos/resources-18anos/familyImg/imagen 40.jpeg", size: "large" },
+{ id: 64, url: "/18anos/resources-18anos/familyImg/imagen 41.jpeg", size: "large" },
+{ id: 65, url: "/18anos/resources-18anos/familyImg/imagen 42.jpeg", size: "large" },
+{ id: 66, url: "/18anos/resources-18anos/familyImg/imagen 43.jpeg", size: "large" },
+{ id: 67, url: "/18anos/resources-18anos/familyImg/imagen 44.jpeg", size: "large" },
+{ id: 68, url: "/18anos/resources-18anos/familyImg/imagen 45.jpeg", size: "large" },
+{ id: 69, url: "/18anos/resources-18anos/familyImg/imagen 46.jpeg", size: "large" },
+{ id: 70, url: "/18anos/resources-18anos/familyImg/imagen 47.jpeg", size: "large" },
+{ id: 71, url: "/18anos/resources-18anos/familyImg/imagen 48.jpeg", size: "large" },
+{ id: 72, url: "/18anos/resources-18anos/familyImg/imagen 49.jpeg", size: "large" },
+{ id: 73, url: "/18anos/resources-18anos/familyImg/imagen 50.jpeg", size: "large" },
+{ id: 74, url: "/18anos/resources-18anos/familyImg/imagen 51.jpeg", size: "large" },
+{ id: 75, url: "/18anos/resources-18anos/familyImg/imagen 52.jpeg", size: "large" },
+{ id: 76, url: "/18anos/resources-18anos/familyImg/imagen 53.jpeg", size: "large" },
+{ id: 77, url: "/18anos/resources-18anos/familyImg/imagen 54.jpeg", size: "large" },
+{ id: 78, url: "/18anos/resources-18anos/familyImg/imagen 55.jpeg", size: "large" },
+{ id: 79, url: "/18anos/resources-18anos/familyImg/imagen 56.jpeg", size: "large" },
+{ id: 80, url: "/18anos/resources-18anos/familyImg/imagen 57.jpeg", size: "medium" },
+{ id: 81, url: "/18anos/resources-18anos/familyImg/imagen 58.jpeg", size: "medium" },
+{ id: 82, url: "/18anos/resources-18anos/familyImg/imagen 59.jpeg", size: "medium" },
+{ id: 83, url: "/18anos/resources-18anos/familyImg/imagen 60.jpeg", size: "large" },
+{ id: 84, url: "/18anos/resources-18anos/familyImg/imagen 61.jpeg", size: "large" },
+{ id: 85, url: "/18anos/resources-18anos/familyImg/imagen 62.jpeg", size: "large" },
+{ id: 86, url: "/18anos/resources-18anos/familyImg/imagen 63.jpeg", size: "large" },
+{ id: 87, url: "/18anos/resources-18anos/familyImg/imagen 64.jpeg", size: "large" },
+{ id: 88, url: "/18anos/resources-18anos/familyImg/imagen 65.jpeg", size: "large" },
+{ id: 89, url: "/18anos/resources-18anos/familyImg/imagen 66.jpeg", size: "large" },
+{ id: 90, url: "/18anos/resources-18anos/familyImg/imagen 67.jpeg", size: "large" },
+{ id: 91, url: "/18anos/resources-18anos/familyImg/imagen 68.jpeg", size: "large" },
+{ id: 92, url: "/18anos/resources-18anos/familyImg/imagen 69.jpeg", size: "large" },
+{ id: 93, url: "/18anos/resources-18anos/familyImg/imagen 70.jpeg", size: "large" },
+{ id: 94, url: "/18anos/resources-18anos/familyImg/imagen 71.jpeg", size: "medium" },
+{ id: 95, url: "/18anos/resources-18anos/familyImg/imagen 72.jpeg", size: "large" },
+{ id: 96, url: "/18anos/resources-18anos/familyImg/imagen 73.jpeg", size: "large" },
+{ id: 97, url: "/18anos/resources-18anos/familyImg/imagen 74.jpeg", size: "large" },
+{ id: 98, url: "/18anos/resources-18anos/familyImg/imagen 75.jpeg", size: "large" },
+{ id: 99, url: "/18anos/resources-18anos/familyImg/imagen 76.jpeg", size: "large" },
+{ id: 100, url: "/18anos/resources-18anos/familyImg/imagen 77.jpeg", size: "large" },
+{ id: 101, url: "/18anos/resources-18anos/familyImg/imagen 78.jpeg", size: "large" },
+{ id: 102, url: "/18anos/resources-18anos/familyImg/imagen 79.jpeg", size: "large" },
+{ id: 103, url: "/18anos/resources-18anos/familyImg/imagen 80.jpeg", size: "large" },
+{ id: 104, url: "/18anos/resources-18anos/familyImg/imagen 81.jpeg", size: "large" },
+{ id: 105, url: "/18anos/resources-18anos/familyImg/imagen 82.jpeg", size: "large" },
+{ id: 106, url: "/18anos/resources-18anos/familyImg/imagen 83.jpeg", size: "large" },
+{ id: 107, url: "/18anos/resources-18anos/familyImg/imagen 84.jpeg", size: "large" },
+{ id: 108, url: "/18anos/resources-18anos/familyImg/imagen 85.jpeg", size: "large" },
+{ id: 109, url: "/18anos/resources-18anos/familyImg/imagen 86.jpeg", size: "large" },
+{ id: 110, url: "/18anos/resources-18anos/familyImg/imagen 87.jpeg", size: "medium" },
+{ id: 111, url: "/18anos/resources-18anos/familyImg/imagen 88.jpeg", size: "large" },
+{ id: 112, url: "/18anos/resources-18anos/familyImg/imagen 89.jpeg", size: "large" },
+{ id: 113, url: "/18anos/resources-18anos/familyImg/imagen 90.jpeg", size: "large" },
+{ id: 114, url: "/18anos/resources-18anos/familyImg/imagen 91.jpeg", size: "large" },
+{ id: 115, url: "/18anos/resources-18anos/familyImg/imagen 92.jpeg", size: "medium" },
+{ id: 116, url: "/18anos/resources-18anos/familyImg/imagen 93.jpeg", size: "medium" }
 ];
+
 
 // CHAPTER 4: ALICIA EN EL PAÍS DE LAS MARAVILLAS - Table of Wishes
 // Array of guest messages (one playing card per entry)
@@ -172,10 +298,137 @@ export const cartasInvitados: CartaInvitado[] = [
   },
   {
     id: 7,
-    nombre: "Amor",
-    mensaje: `a`,
+    nombre: "Amor🩵",
+    mensaje: `Mi amor, hoy cumplis 18 años en los que has sido una gran persona, hija, hermana, sobrina, nieta, tía y novia. Estoy muy orgulloso de vos, de todo lo que has logrado, de tus esfuerzos cada día y de tu capacidad para cumplir todo lo que te propones. Espero que después de esta etapa sigas siendo esa gran mujer y nunca te rindas, y si en algun momento te pasa por la mente, recordá que aqui estamos tu familia y yo apoyándote en todo momento. Te amo 3 millones abejita, felices 18💛`,
     fotoInvitado: "/18anos/resources-18anos/familyImg/chris.jpeg",
+  },
+  {
+    id: 8,
+    nombre: "Mami",
+    mensaje: `No es nuestra mejor foto… sin embargo nos recuerda uno de los tantos momentos que reímos hasta llorar… deseo 
+    que siempre sean más momentos así
+
+    Te amo pulguis que siempre sigas brillando y siendo luz y felicidad para todos los que te rodean. 
+    Felices 18’s`,
+    fotoInvitado: "/18anos/resources-18anos/familyImg/pao.jpeg",
+  },
+  {
+    id: 9,
+    nombre: "Tía Macha",
+    mensaje: `Felices 18 años! ❤️ Que esta nueva etapa de tu vida venga llena de sueños, alegrías y muchísimas bendiciones! 
+    Nunca dejes de ser esa personita tan linda, amorosa y dedicada. Que sigas esforzándote por alcanzar todo lo que te 
+    propongas y que nunca te falten los motivos para sonreír! Te quiero mucho mi amor y te deseo que siempre seas muy feliz! 💕`,
+    fotoInvitado: "/18anos/resources-18anos/familyImg/macha-20261119.jpeg",
+  },
+  {
+    id: 10,
+    nombre: "Tía Paula",
+    mensaje: `Princesa de Dios, el Señor te conceda muchos años de salud y prosperidad al lado de tu familia y seres queridos.
+    Siempre has sido una niña llena de luz y talentos. Dios te siga bendiciendo. Te quiero mucho.`,
+    fotoInvitado: "/18anos/resources-18anos/familyImg/paula.png",
+  },
+  {
+    id: 11,
+    nombre: "Bran",
+    mensaje: `Mi princesita hermosa, espero que esta nueva etapa de tu vida la disfrutes montones y te llenes de nuevos aprendizajes, aquí voy a estar cada que ocupes un consejo 
+    
+    Te amo muchísimo❤️🥰`,
+    fotoInvitado: "/18anos/resources-18anos/familyImg/bran.jpeg",
+  },
+  {
+    id: 12,
+    nombre: "Mi Gorda",
+    mensaje: `Eres la mejor tía loca del mundo, espero que disfrutes mucho de tu cumple #18 
+    
+    Te amo muchísimo tía🩷✨`,
+    fotoInvitado: "/18anos/resources-18anos/familyImg/eva.jpeg",
+  },
+  {
+    id: 13,
+    nombre: "Jime💞",
+    mensaje: `Holaaa mi niña linda!
+
+    Feliz cumpleaños preciosa de mi corazón, que Diosito y la Virgencita te cubran con su santo manto y te guíen siempre por el camino
+    del bien, no olvides lo carga que eres y que mereces cosas divinas en tu vida, estoy muy orgullosa de td lo q has logrado a sol de
+    hoy, solo tú sabes tu esfuerzo, tu sudor de día a día y la disciplina que tienes a la hora de lograr lo que te propones, aunque me
+    ponga muy triste no estar en tu cumple por mi baile d graduación, soy la persona más feliz sabiendo que tienes un año más de vida
+    y de salud, tenemos una salida pendiente al cine para celebrar tu cumple si mi corazón? 
+    
+    Te amo con todo mi corazón, siempre la 
+    cabeza en alto como lo has hecho siempre, gracias por tu amistad, por ser d las personas que considero como mi hermana mayor, 
+    ailoviussss🫶🏻💞`,
+    fotoInvitado: "/18anos/resources-18anos/familyImg/jimena.jpeg",
+  },
+  {
+    id: 14,
+    nombre: "Papá Joshua",
+    mensaje: `Hola Mari!!
+
+    Aun no recuerdo en qué momento adoptaste el termino de hija, me parece peculiar la verdad sinceramente. Porque aunque en mis 
+    planes de vida no es ser papá, tu cumples la misión que uno tiene para un papá. Es traerle esperanza, en mi momento más oscuro,
+    tu fuiste la luz que me ayudó a sobrevivir lo que fueron los días oscuros, tu conociste la verdadera versión y aun así estuviste 
+    a mi lado, pese a qué la gran mayoría no.
+
+    Hoy cumples 18 y así como un papá, estoy orgulloso de quién eres, la mujer en la que te estás convirtiendo, que no deja de luchar
+    por sus sueños. Sigue así hija mía y verás como todo aquello que hoy son oraciones, pronto serán realidades.
+
+    Dios te bendiga un montón.
+
+    Con cariño: Joshua`,
+    fotoInvitado: "/18anos/resources-18anos/familyImg/joshua.jpeg",
+  },
+  {
+    id: 15,
+    nombre: "Cuñis",
+    mensaje: `Las Mañanitas de la Flaca Loca
+    Estas son las mañanitas
+que te canta tu cuñao,
+hoy que llegas a los dieciocho
+vengo bien emocionao'.
+El día que tú naciste,
+qué tragedia se sintió,
+pero gracias a este loco,
+la alegría apareció.
+Hoy que ya cumples dieciocho,
+te podemos desalojar,
+mandarte pa'l llano lejos
+y tranquilos descansar.
+Pero no te me preocupes,
+era broma nada más,
+porque eres de esta familia
+y aquí te queremos más.
+Flaca loca de ocurrencias,
+de travesuras sin final,
+siempre nos sacas sonrisas
+con tu forma tan especial.
+Que se cumplan tus anhelos,
+que alcances cada ilusión,
+y que Dios llene tu vida
+de dicha y bendición.
+Y ya deja al concuñito,
+no me lo vayas a quitar,
+que yo quiero quedármelo
+para poder vacilar.
+Con cariño te lo canta
+este cuñado soñador,
+el más chiflado de todos,
+pero lleno de amor.
+Que tengas un cumpleaños
+repleto de felicidad,
+y que te vuelvas muy viejita,
+¡con salud y dignidad!
+¡Ay, ay, ay! Levanten las copas, que hoy cumple años la flaca loca de la familia! ❤️🥳`,
+    fotoInvitado: "/18anos/resources-18anos/familyImg/marcos.jpeg",
+  },
+  {
+    id: 16,
+    nombre: "Dey",
+    mensaje: `Felices 18 años . Quiero que sepas que para mí eres mucho más que una prima, eres como una hermana que la vida me 
+    regaló. Te tengo un cariño enorme y espero que nunca olvides lo especial e importante que eres para mí. Deseo que esta nueva etapa
+     esté llena de momentos bonitos, alegrías y sueños cumplidos. Siempre voy a desear lo mejor para ti. Te quiero muchísimo.`,
+    fotoInvitado: "/18anos/resources-18anos/familyImg/dey.jpeg",
   }
+  
 ];
 
 // CHAPTER 5: EL EXTRAÑO MUNDO DE JACK - Final Wish

@@ -321,6 +321,11 @@ button, img, svg { user-select: none; -webkit-user-select: none; -webkit-user-dr
 .memory-zoom-close { position: absolute; z-index: 5; top: clamp(18px, 2vw, 26px); right: clamp(18px, 2vw, 26px); display: grid; width: 42px; height: 42px; place-items: center; border: 1px solid rgba(255,255,255,.46); border-radius: 50%; background: rgba(12,12,10,.78); color: #f2eee4; box-shadow: 0 5px 16px rgba(0,0,0,.48); cursor: pointer; font: 28px/1 Georgia, serif; }
 .memory-zoom-close:hover { background: rgba(58,59,52,.92); }
 .memory-zoom-close:focus-visible { outline: 2px solid var(--fw-spark); outline-offset: 3px; }
+.memory-zoom-nav { position: absolute; z-index: 5; top: 50%; display: grid; width: 44px; height: 44px; place-items: center; border: 1px solid rgba(255,255,255,.46); border-radius: 50%; background: rgba(12,12,10,.78); color: #f2eee4; box-shadow: 0 5px 16px rgba(0,0,0,.48); cursor: pointer; font: 34px/1 Georgia, serif; transform: translateY(-50%); }
+.memory-zoom-nav:hover { background: rgba(58,59,52,.92); }
+.memory-zoom-nav:focus-visible { outline: 2px solid var(--fw-spark); outline-offset: 3px; }
+.memory-zoom-prev { left: -22px; }
+.memory-zoom-next { right: -22px; }
 @media (hover: none) { .memory-card figcaption { opacity: 1; transform: none; } }
 
 @media (max-width: 760px) {
@@ -335,6 +340,9 @@ button, img, svg { user-select: none; -webkit-user-select: none; -webkit-user-dr
   .memory-zoom-image { max-height: calc(100svh - 78px); }
   .memory-zoom-image img { max-width: calc(100vw - 48px); max-height: calc(100svh - 78px); }
   .memory-zoom-close { top: 16px; right: 16px; width: 38px; height: 38px; }
+  .memory-zoom-nav { width: 40px; height: 40px; font-size: 30px; }
+  .memory-zoom-prev { left: 4px; }
+  .memory-zoom-next { right: 4px; }
 }
 
 /* ============================================================================
