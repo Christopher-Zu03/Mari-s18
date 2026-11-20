@@ -427,6 +427,12 @@ y que te vuelvas muy viejita,
     regaló. Te tengo un cariño enorme y espero que nunca olvides lo especial e importante que eres para mí. Deseo que esta nueva etapa
      esté llena de momentos bonitos, alegrías y sueños cumplidos. Siempre voy a desear lo mejor para ti. Te quiero muchísimo.`,
     fotoInvitado: "/18anos/resources-18anos/familyImg/dey.jpeg",
+  },
+  {
+    id: 17,
+    nombre: "Enzo",
+    mensaje: `Mariii feliz cumpleaños, deseo que para vos este gran comienzo sea de muchos éxitos y bendiciones. Nunca dejes de ser la persona que eres tan alegre y bien esforzada, me acuerdo de la gran dupla que éramos y quiero que sepas que nada ha cambiado, te quiero un montón y siempre me tendrás para lo que necesites, me ha costado no tener a mi compañera de exposiciones jaja, pero espero que de verdad sigas adelante y nunca te rindas, te quiero mucho Mari y te deseo un muy feliz cumpleaños ❤️`,
+    fotoInvitado: "/18anos/resources-18anos/familyImg/enzo.png",
   }
   
 ];
