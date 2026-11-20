@@ -443,6 +443,20 @@ y que te vuelvas muy viejita,
     FELICES #18 PRINCESS 
     TE QUIERO MUCHÍSIMO 💗`,
     fotoInvitado: "/18anos/resources-18anos/familyImg/naye.png",
+  },
+  {
+    id: 19,
+    nombre: "Steph💕",
+    mensaje: `Feliz cumpleaños, mi Mari hermosa. 💗
+
+      No sabés cuánto te extraño. Siempre voy a recordar esos tres años que compartimos como una de las etapas más bonitas de mi vida. Aunque hayan pasado dos años sin vernos y la vida nos haya llevado por caminos diferentes, el cariño que te tengo sigue intacto.
+      Extraño nuestras risas, nuestros momentos y todo lo bonito que vivimos. Siempre vas a ser alguien demasiado especial para mí, y no sabés lo agradecida que estoy por haberte tenido en mi vida.
+      Deseo de todo corazón que seás muy feliz, que la vida te regale cosas bonitas, que cumplás todos tus sueños y que nunca te falten motivos para sonreír. Siempre he querido verte feliz y eso nunca va a cambiar.
+
+      Te amo muchísimo, mi niña. Ojalá algún día volvamos a abrazarnos y a compartir como antes. Nunca olvidés lo especial que sos para mí.
+
+      Con muchísimo cariño, Steph.🥹💕`,
+    fotoInvitado: "/18anos/resources-18anos/familyImg/steph.png",
   }
   
 ];
